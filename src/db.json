@@ -1,0 +1,19 @@
+{  
+    "properties": [  
+        {  
+            "id": 1,  
+            "title": "Luxury Villa",  
+            "price": "$1,200,000",  
+            "image": "url_to_image1",  
+            "description": "A beautiful luxury villa with a swimming pool."  
+        },  
+        {  
+            "id": 2,  
+            "title": "Modern Apartment",  
+            "price": "$850,000",  
+            "image": "url_to_image2",  
+            "description": "A modern apartment located in the city center."  
+        }  
+    
+    ]  
+}
