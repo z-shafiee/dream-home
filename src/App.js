@@ -29,11 +29,29 @@ import PropertyList from './components/PropertyList';
 
 const App = () => (  
     <div>  
-        <Header />  
-        <PropertyList />  
-        // Other components like footer etc.  
+
         
     </div>  
 );  
+
+export default App;
+// src/App.js  
+import React from 'react';  
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+import Header from './components/Header';  
+import HomePage from './pages/HomePage';  
+import PropertyDetails from './pages/PropertyDetails';  
+
+const App = () => {  
+    return (  
+        <Router>  
+            <Header />  
+            <Switch>  
+                <Route path="/" exact component={HomePage} />  
+                <Route path="/properties/:id" component={PropertyDetails} />  
+            </Switch>  
+        </Router>  
+    );  
+};  
 
 export default App;
